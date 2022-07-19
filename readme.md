@@ -22,4 +22,4 @@
   - genericemail@practice.com
 
 # DEMO:
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](./readmeDemo.gif)
