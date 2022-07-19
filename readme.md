@@ -20,3 +20,6 @@
 ## Contact: 
   - [Dusticcus](https://GitHub.com/Dusticcus)
   - genericemail@practice.com
+
+# DEMO:
+![Alt Text](./readmeDemo.gif)
