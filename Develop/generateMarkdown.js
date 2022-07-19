@@ -49,8 +49,11 @@ function writeReadme(answers) {
 ## Tests: 
   - ${answers.tests}<br/>
 ## Contact: 
+  - [${answers.githubAccount}](https://GitHub.com/${answers.githubAccount})
   - ${answers.contact}`
 }
 
 // module.exports is an object we use to store variables or methods
 module.exports = writeReadme;
+
+

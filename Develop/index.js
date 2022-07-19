@@ -3,8 +3,16 @@ const inquirer = require('inquirer');
 const fs = require('file-system');
 const writeReadme = require('./generateMarkdown');
 
+
+
+// // TODO: Create a function to initialize app
+function init() {
 // // TODO: Create an array of questions for user input
 const questions = [{
+    type: 'input',
+    message: 'Provide the name of your App:',
+    name: 'appName',
+},{
     type: 'input',
     message: 'Provide a description of your application:',
     name: 'description',
@@ -22,18 +30,23 @@ const questions = [{
 },
 {
     type: 'input',
-    message: 'Describe how to use the app.',
+    message: 'Describe how to use the app:',
     name: 'usage',
 },
 {
     type: 'input',
-    message: 'Did anyone contribue to this repository or app development?',
+    message: 'How can you or others contribute?',
     name: 'contributing',
 },
 {
     type: 'input',
-    message: 'Tests?',
+    message: 'Testing Information:',
     name: 'tests',
+},
+{
+    type: 'input',
+    message: 'Provide your Github Account name:',
+    name: 'githubAccount',
 },
 {
     type: 'input',
@@ -61,30 +74,8 @@ inquirer
             // Something else went wrong
         }
     });
-
-// function writeReadme(answers) {
-//     return `
-// # App Name: <br/>
-// ## Description: ${answers.description}<br/>
-// ## Table of Contents:
-// - [Installation](#installation)
-// - [Usage](#usage)
-// - [Contribute](#contributing)
-// - [Tests](#tests)
-// - [Contact](#contact)
-// ## License: ${answers.license}<br/>
-// ## Insallation: ${answers.installation}<br/> 
-// ## Use: ${answers.usage}<br/>
-// ## Contribute: ${answers.contributing}<br/>
-// ## Tests: ${answers.tests}<br/>
-// ## Contact: ${answers.contact}`
-// }
-
-
-
-// // TODO: Create a function to initialize app
-// function init() {}
+}
 
 // // Function call to initialize app
-// init();
+init();
 
