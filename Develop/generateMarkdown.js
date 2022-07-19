@@ -40,7 +40,7 @@ function writeReadme(answers) {
 - [Contribute](#contributing)
 - [Tests](#tests)
 - [Contact](#contact)
-## Insallation: 
+## Installation: 
   - ${answers.installation}<br/> 
 ## Use: 
   - ${answers.usage}<br/>
